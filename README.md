@@ -12,7 +12,7 @@ The goal of the project is to learn a couple of things.
 
 ## Steps of the project
 
-- [ ] Creating the empty project.
+- [x] Creating the empty project.
 - [ ] Creating the responsive layout with css.
 - [ ] Creating Flipped.
 - [ ] Creating the test project.
@@ -36,3 +36,9 @@ A simple page that checks if the input is a palindrone.
 ## Mortgage calculator
 A simple page that calculates interest and shows monthly payments.
 
+## The type of project
+I opted for interactive server for Blazor. The reason is I want to keep it simple for now on the testing aspect.
+I don't expect loads of users on this site. Otherwise static with JS would be much better.
+However I just want to keep the testhing to C#. WebAssembly would have been a good choice as well.
+Perhaps I make it auto after I am done.
+The choice doesn't have to be optimal, since the main goal of this project is to learn.

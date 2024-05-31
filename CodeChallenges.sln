@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F871444-9E60-4D9E-99DD-95AFB1002370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge", "src\CodeChallenge\CodeChallenge.csproj", "{06A161CD-4001-4F1B-AB21-A2493CD9306C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +14,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06A161CD-4001-4F1B-AB21-A2493CD9306C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A161CD-4001-4F1B-AB21-A2493CD9306C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A161CD-4001-4F1B-AB21-A2493CD9306C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A161CD-4001-4F1B-AB21-A2493CD9306C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{06A161CD-4001-4F1B-AB21-A2493CD9306C} = {4F871444-9E60-4D9E-99DD-95AFB1002370}
 	EndGlobalSection
 EndGlobal
