@@ -42,3 +42,8 @@ I don't expect loads of users on this site. Otherwise static with JS would be mu
 However I just want to keep the testhing to C#. WebAssembly would have been a good choice as well.
 Perhaps I make it auto after I am done.
 The choice doesn't have to be optimal, since the main goal of this project is to learn.
+
+## Additional learned things
+I figured I might as well run my tests with GitHub Actions.
+I had a little trouble with getting it to work, however Windows is not case sensitive, Linux is.
+So I learned when referencing projects, it is case sensitive to avoid problems down the road.
