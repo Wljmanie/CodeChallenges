@@ -1,0 +1,53 @@
+<header class="site-header">
+    <nav class="navigation">
+        <div class="nav-logo">
+            <a href="/">
+                Coding Challenges
+            </a>
+        </div>
+        <div class="nav-links">
+            <div>
+                <NavLink href="/Flipped" Match="NavLinkMatch.All">Flipped</NavLink>
+            </div>
+            <div>
+                <NavLink href="/EvilOlive" Match="NavLinkMatch.All">Evil Olive</NavLink>
+            </div>
+            <div>
+                <NavLink href="/FizzBuzz" Match="NavLinkMatch.All">FizzBuzz</NavLink>
+            </div>
+            <div>
+                <NavLink href="/Mortgage" Match="NavLinkMatch.All">Mortgage</NavLink>
+            </div>
+        </div>
+        <div class="toggle-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="dropdown-menu">
+        <div class="dropdown-backdrop">
+            <div>
+                <NavLink href="/Flipped" Match="NavLinkMatch.All">Flipped</NavLink>
+            </div>
+            <div>
+                <NavLink href="/EvilOlive" Match="NavLinkMatch.All">Evil Olive</NavLink>
+            </div>
+            <div>
+                <NavLink href="/FizzBuzz" Match="NavLinkMatch.All">FizzBuzz</NavLink>
+            </div>
+            <div>
+                <NavLink href="/Mortgage" Match="NavLinkMatch.All">Mortgage</NavLink>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-menu')
+        const toggleBtnIcon = document.querySelector('.toggle-menu i')
+        const dropdownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            dropdownMenu.classList.toggle('open')
+            const isOpen = dropdownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        }
+    </script> 
+</header>

@@ -1,103 +1,34 @@
 ﻿@page "/"
 
 <PageTitle>Home</PageTitle>
-<div class="site">
     
-    <header class="site-header">
-        <nav class="navigation">
-            <div class="nav-logo">
-                <a href="/">
-                    Coding Challenges
-                </a>
-            </div>
-            <div class="nav-links">
-                <div>
-                    <NavLink href="/Flipped" Match="NavLinkMatch.All">Flipped</NavLink>
-                </div>
-                <div>
-                    <NavLink href="/EvilOlive" Match="NavLinkMatch.All">Evil Olive</NavLink>
-                </div>
-                <div>
-                    <NavLink href="/FizzBuzz" Match="NavLinkMatch.All">FizzBuzz</NavLink>
-                </div>
-                <div>
-                    <NavLink href="/Mortgage" Match="NavLinkMatch.All">Mortgage</NavLink>
-                </div>
-            </div>
-            <div class="toggle-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
-        <div class="dropdown-menu">
-            <div class="dropdown-backdrop">
-                <div>
-                    <NavLink href="/Flipped" Match="NavLinkMatch.All">Flipped</NavLink>
-                </div>
-                <div>
-                    <NavLink href="/EvilOlive" Match="NavLinkMatch.All">Evil Olive</NavLink>
-                </div>
-                <div>
-                    <NavLink href="/FizzBuzz" Match="NavLinkMatch.All">FizzBuzz</NavLink>
-                </div>
-                <div>
-                    <NavLink href="/Mortgage" Match="NavLinkMatch.All">Mortgage</NavLink>
-                </div>
-            </div>
+<div class="main">
+    <div class="logo">
+        <div class="card">
+            <a href="/Flipped">
+                <img src="images/flipped-logo.png" />
+            </a>
         </div>
-        <script>
-            const toggleBtn = document.querySelector('.toggle-menu')
-            const toggleBtnIcon = document.querySelector('.toggle-menu i')
-            const dropdownMenu = document.querySelector('.dropdown-menu')
-
-            toggleBtn.onclick = function () {
-                dropdownMenu.classList.toggle('open')
-                const isOpen = dropdownMenu.classList.contains('open')
-                toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-            }
-        </script> 
-    </header>
-
-    <main class="site-main">
-        <div class="layout">
-            <div class="main">
-                <div class="logo">
-                    <div class="card">
-                        <a href="/Flipped">
-                            <img src="images/flipped-logo.png" />
-                        </a>
-                    </div>
-                </div>
-                <div class="logo">
-                    <div class="card">
-                        <a href="/EvilOlive">
-                            <img src="images/evil-olive-logo.png" />
-                        </a>
-                    </div>
-                </div>
-                <div class="logo">
-                    <div class="card">
-                        <a href="/FizzBuzz">
-                            <img src="images/fizzbuzz-logo.png" />
-                        </a>
-                    </div>
-                </div>
-                <div class="logo">
-                    <div class="card">
-                        <a href="/Mortgage">
-                            <img src="images/mortgage-logo.png" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div class="logo">
+        <div class="card">
+            <a href="/EvilOlive">
+                <img src="images/evil-olive-logo.png" />
+            </a>
         </div>
-    </main>
- 
-    <footer class="footer">
-        <div>
-            <span>Created by Wesley L J Manie</span>
+    </div>
+    <div class="logo">
+        <div class="card">
+            <a href="/FizzBuzz">
+                <img src="images/fizzbuzz-logo.png" />
+            </a>
         </div>
-        <div>
-            <a href="https://github.com/Wljmanie"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <div class="logo">
+        <div class="card">
+            <a href="/Mortgage">
+                <img src="images/mortgage-logo.png" />
+            </a>
         </div>
-    </footer>
+    </div>
 </div>
