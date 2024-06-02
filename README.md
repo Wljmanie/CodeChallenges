@@ -16,7 +16,7 @@ The goal of the project is to learn a couple of things.
 - [x] Creating the responsive layout with css.
 - [x] Creating Flipped.
 - [x] Creating the test project.
-- [ ] Creating tests for Flipped.
+- [x] Creating tests for Flipped.
 - [ ] Creating FizzBuzz.
 - [ ] Creating tests for FizzBuzz.
 - [ ] Creating Evil Olive.
