@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenge", "src\CodeCh
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EAF0B81C-555E-4772-A86F-4160285AFCAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nunittest", "test\nunittest\nunittest.csproj", "{411744AF-DFA9-4EEB-9F9A-F02527ACF0C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest", "test\NUnitTest\NUnitTest.csproj", "{411744AF-DFA9-4EEB-9F9A-F02527ACF0C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
