@@ -15,7 +15,7 @@ The goal of the project is to learn a couple of things.
 - [x] Creating the empty project.
 - [x] Creating the responsive layout with css.
 - [x] Creating Flipped.
-- [ ] Creating the test project.
+- [x] Creating the test project.
 - [ ] Creating tests for Flipped.
 - [ ] Creating FizzBuzz.
 - [ ] Creating tests for FizzBuzz.
