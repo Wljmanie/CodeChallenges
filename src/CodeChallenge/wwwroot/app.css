@@ -190,7 +190,60 @@ body {
 }
 
 .app {
-    background: yellow;
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.app label {
+    font-weight: bold;
+    color: var(--main-text-color);
+}
+
+.app .input-text {
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    padding-block: 4px;
+    padding-inline: 5px;
+    max-width: 250px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.app .input-text:focus {
+    outline: none;
+    box-shadow: 0 0 3px 0px var(--shadow-color);
+}
+
+.app button {
+    font-size: 1rem;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--sec-text-color);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 3px 1px var(--shadow-color);
+    background: var(--sec-bg-color);
+    height: 2rem;
+    transition: scale 0.15s ease;
+}
+
+.app button:hover {
+    scale: 1.05;
+}
+
+.app button:active {
+    scale: 0.95;
+}
+
+.app p {
+    margin: 0;
 }
 
 /* Footer */
