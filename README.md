@@ -18,7 +18,7 @@ The goal of the project is to learn a couple of things.
 - [x] Creating the test project.
 - [x] Creating tests for Flipped.
 - [x] Creating Evil Olive.
-- [ ] Creating tests for Evil Olive.
+- [x] Creating tests for Evil Olive.
 - [ ] Creating FizzBuzz.
 - [ ] Creating tests for FizzBuzz.
 - [ ] Creating a Mortgage calculator.

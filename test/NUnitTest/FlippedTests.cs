@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using CodeChallenge.Components.Pages;
 
 namespace NUnitTest;
