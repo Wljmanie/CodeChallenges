@@ -20,7 +20,7 @@ The goal of the project is to learn a couple of things.
 - [x] Creating Evil Olive.
 - [x] Creating tests for Evil Olive.
 - [x] Creating FizzBuzz.
-- [ ] Creating tests for FizzBuzz.
+- [x] Creating tests for FizzBuzz.
 - [ ] Creating a Mortgage calculator.
 - [ ] Creating tests for Mortgage calculator.
 
