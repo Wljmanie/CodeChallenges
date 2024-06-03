@@ -88,6 +88,10 @@ body {
     color: var(--sec-text-color);
 }
 
+.navigation a.active {
+    color: var(--sec-text-color);
+}
+
 .nav-links {
     width: 0;
     height: 0;
@@ -146,7 +150,7 @@ body {
     color: var(--sec-text-color);
 }
 
-.dropdown-menu a .active {
+.dropdown-menu a.active {
     color: var(--sec-text-color);
 }
 
@@ -244,6 +248,7 @@ body {
 
 .app p {
     margin: 0;
+    word-break: break-word;
 }
 
 /* Footer */

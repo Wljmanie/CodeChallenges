@@ -1,0 +1,37 @@
+@page "/EvilOlive"
+@rendermode RenderMode.InteractiveServer
+
+<PageTitle>Evil Olive</PageTitle>
+
+<div class="main">
+    <div class="logo">
+        <img src="images/evil-olive-logo.png" />
+    </div>
+    <div class="app">
+        <label for="input">
+            Enter some text to see if it is a Palindrome.
+        </label>
+        <InputText class="input-text" id="input" @bind-Value="input" />
+        <button type="button" @onclick="() => Palindrome(input)">Check it!</button>
+        @if(output == string.Empty){
+            <label for="output">
+                <br>
+            </label>
+        }
+        else{
+            @if(isPalidrome){
+                <label for="output">
+                    This is a Palidrome. The reversed result is:
+                </label>
+            }
+            else{
+                <label for="output">
+                    This is not a Palidrome. The reversed result is:
+                </label>
+            }
+        }
+        <p id="output">
+            @output<br>
+        </p>
+    </div>
+</div>

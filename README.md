@@ -17,10 +17,10 @@ The goal of the project is to learn a couple of things.
 - [x] Creating Flipped.
 - [x] Creating the test project.
 - [x] Creating tests for Flipped.
+- [x] Creating Evil Olive.
+- [ ] Creating tests for Evil Olive.
 - [ ] Creating FizzBuzz.
 - [ ] Creating tests for FizzBuzz.
-- [ ] Creating Evil Olive.
-- [ ] Creating tests for Evil Olive.
 - [ ] Creating a Mortgage calculator.
 - [ ] Creating tests for Mortgage calculator.
 
@@ -31,7 +31,7 @@ A simple page that reverses a string for you.
 A simple page that shows FizzBuzz.
 
 ## Evil Olive
-A simple page that checks if the input is a palindrone.
+A simple page that checks if the input is a palindrome.
 
 ## Mortgage calculator
 A simple page that calculates interest and shows monthly payments.
