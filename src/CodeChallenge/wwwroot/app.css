@@ -5,6 +5,8 @@
     --shadow-color: light-dark( black, white);
     --main-text-color: light-dark( black, white);
     --sec-text-color: light-dark(#cd511f,rgb(255, 163, 72));
+    --fizz-color: light-dark(#2a40cf, #4e9aeb);
+    --buzz-color: #d54304;
 }
 
 @font-face {
@@ -23,14 +25,6 @@
     font-family: 'roboto';
     src: url('fonts/Roboto/Roboto-Bold.ttf');
     font-weight: bold;
-}
-
-
-
-
-
-h1:focus {
-    outline: none;
 }
 
 body {
@@ -251,6 +245,38 @@ body {
     word-break: break-word;
 }
 
+/* FizzBuzz */
+.fb {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 200px;
+    justify-self: center;
+}
+
+.results div {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.results .fizz {
+    color: var(--fizz-color);
+    font-weight: bold;
+}
+
+.results .buzz {
+    color: var(--buzz-color);
+    font-weight: bold;
+}
+
 /* Footer */
 .footer {
     background: var(--sec-bg-color);
@@ -311,6 +337,10 @@ body {
     .navigation .nav-links a {
         font-size: 1.75rem;
     }
+
+    .results {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 @media(min-width: 992px) {
@@ -320,6 +350,10 @@ body {
 
     .main {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .results {
+        grid-template-columns: repeat(10, 1fr);
     }
 }
 

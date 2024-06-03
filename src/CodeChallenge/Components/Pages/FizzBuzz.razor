@@ -1,0 +1,52 @@
+@page "/FizzBuzz"
+@rendermode RenderMode.InteractiveServer
+
+<PageTitle>FizzBuzz</PageTitle>
+
+<div class="main">
+    <div class="logo">
+        <img src="images/fizzbuzz-logo.png" />
+    </div>
+    <div class="app">
+        <EditForm Model="FizzBuzzModel" OnValidSubmit="CreateFizzBuzz">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <label>
+                Enter the numbers to generate FizzBuzz.
+            </label>
+            <div class="fb">
+                <label for="FizzBuzzModel.fromNumber">
+                    From:
+                </label>
+                <InputNumber @bind-Value="FizzBuzzModel.fromNumber" class="input-text" />
+                <label for="toNumber">
+                    To:
+                </label>
+                <InputNumber @bind-Value="FizzBuzzModel.toNumber" class="input-text" />
+                <label for="fizzNumber">
+                    Fizz number:
+                </label>
+                <InputNumber @bind-Value="FizzBuzzModel.fizzNumber" class="input-text" />
+                <label for="buzzNumber">
+                    Buzz number:
+                </label>
+                <InputNumber @bind-Value="FizzBuzzModel.buzzNumber" class="input-text" />
+            </div>
+            <button type="submit">Create FizzBuzz!</button>
+        </EditForm>
+    </div>
+</div>
+<div class="results">
+    @if(FizzBuzzList != null){
+        if(FizzBuzzList.Count == 0){
+            <p>You create a list with more then 10K entries. Please choose two numbers closer to each other.</p>
+        }
+        else{
+            @foreach(var fb in FizzBuzzList){
+                <div>
+                    @((MarkupString)fb)
+                </div>
+            }
+        }
+    }
+</div>
