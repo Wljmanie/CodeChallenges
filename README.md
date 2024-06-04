@@ -21,7 +21,7 @@ The goal of the project is to learn a couple of things.
 - [x] Creating tests for Evil Olive.
 - [x] Creating FizzBuzz.
 - [x] Creating tests for FizzBuzz.
-- [ ] Creating a Mortgage calculator.
+- [x] Creating a Mortgage calculator.
 - [ ] Creating tests for Mortgage calculator.
 
 ## Flipped
@@ -47,3 +47,6 @@ The choice doesn't have to be optimal, since the main goal of this project is to
 I figured I might as well run my tests with GitHub Actions.
 I had a little trouble with getting it to work, however Windows is not case sensitive, Linux is.
 So I learned when referencing projects, it is case sensitive to avoid problems down the road.
+
+I had a problem with the Range validation. However it only seems to work on properties.
+So they need a get set. Have to be mind full of that in the future.

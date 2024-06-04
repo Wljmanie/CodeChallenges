@@ -277,6 +277,18 @@ body {
     font-weight: bold;
 }
 
+.mortgage-results {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 10px;
+    gap: 5px;
+    max-width: 600px;
+    justify-self: center;
+}
+
+.mortgage-results div {
+}
+
 /* Footer */
 .footer {
     background: var(--sec-bg-color);
@@ -341,6 +353,8 @@ body {
     .results {
         grid-template-columns: repeat(5, 1fr);
     }
+
+    
 }
 
 @media(min-width: 992px) {

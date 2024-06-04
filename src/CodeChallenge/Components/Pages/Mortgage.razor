@@ -1,0 +1,86 @@
+@page "/Mortgage"
+@rendermode RenderMode.InteractiveServer
+
+<PageTitle>Mortgage</PageTitle>
+
+<div class="main">
+    <div class="logo">
+        <img src="images/mortgage-logo.png" />
+    </div>
+    <div class="app">
+        <EditForm Model="MortgageModel" OnValidSubmit="CreateMortgage" FormName="CreateMortgage">
+            <DataAnnotationsValidator />
+            <label>
+                Enter the values to calculate your mortgage.
+            </label>
+            <div class="fb">
+                <label for="loan">
+                    Loan:
+                </label>
+                <InputNumber id="loan" @bind-Value="MortgageModel.MortgageLoan" class="input-text" />
+                <label for="interest">
+                    Interest %:
+                </label>
+                <InputNumber id="interest" @bind-Value="MortgageModel.InterestPercentage" class="input-text" />
+                <label for="years">
+                    Years:
+                </label>
+                <InputNumber id="years" @bind-Value="MortgageModel.Years" class="input-text" />
+            </div>
+            <button type="submit">Calculate Mortgage!</button>
+            <ValidationSummary />
+        </EditForm>
+    </div>
+</div>
+<div class="mortgage-results">
+    @if(payments.Count != 0){
+        <div>
+            Month
+        </div>
+        <div>
+            Monthly Cost
+        </div>
+        <div>
+            Interest
+        </div>
+        <div>
+            Paid off
+        </div>
+        <div>
+            Balance
+        </div>
+        <hr />
+        foreach(var p in payments){
+            <div>
+                @p.period
+            </div>
+            <div>
+                @String.Format("{0:0.00}", p.payment)
+            </div>
+            <div>
+                @String.Format("{0:0.00}", p.interest)
+            </div>
+            <div>
+                @String.Format("{0:0.00}", p.pricipal)
+            </div>
+            <div>
+                @String.Format("{0:0.00}", p.balance)
+            </div>
+        }
+        <hr />
+        <div>
+            Total Interest:
+        </div>
+        <div>
+            @totalInterest
+        </div>
+        <div>
+        </div>
+        <div>
+            Total Cost:
+        </div>
+        <div>
+            @totalCost
+        </div>
+    }
+</div>
