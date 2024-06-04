@@ -22,7 +22,7 @@ The goal of the project is to learn a couple of things.
 - [x] Creating FizzBuzz.
 - [x] Creating tests for FizzBuzz.
 - [x] Creating a Mortgage calculator.
-- [ ] Creating tests for Mortgage calculator.
+- [x] Creating tests for Mortgage calculator.
 
 ## Flipped
 A simple page that reverses a string for you.
@@ -50,3 +50,6 @@ So I learned when referencing projects, it is case sensitive to avoid problems d
 
 I had a problem with the Range validation. However it only seems to work on properties.
 So they need a get set. Have to be mind full of that in the future.
+
+## Web app in action
+You can find this web app running [here](https://CodeChallenges.wesleymanie.nl).

@@ -17,6 +17,9 @@ namespace CodeChallenge.Components.Pages{
 
         public void CreateMortgage(MortgageModel mm){
             payments = new List<Payment>();
+            if(mm.Years <= 0) return;
+            if(mm.InterestPercentage < 0.01) return;
+            if(mm.MortgageLoan < 0.1)return;
             totalInterest = 0;
             totalCost = 0;
             monthyInterestPercentage = mm.InterestPercentage / 100 / 12;
@@ -54,6 +57,7 @@ namespace CodeChallenge.Components.Pages{
             });
             totalCost = Math.Round(totalInterest + mm.MortgageLoan, 2);
         }
+    public int GetListLength() => payments.Count;
     }
 
     public class MortgageModel(){

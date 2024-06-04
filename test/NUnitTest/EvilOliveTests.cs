@@ -20,5 +20,4 @@ public class EvilOliveTests{
         Assert.That(expected, Is.EqualTo(evilOlive.GetOutput()));
         Assert.That(isTrue, Is.EqualTo(evilOlive.IsPalidrome()));
     }
-
 }
